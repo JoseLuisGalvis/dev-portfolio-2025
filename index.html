@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="icon" type="image/png" href="./assets/images/dev.png" />
+    <title>Dev Portfolio</title>
+    <!-- GSAP Library and Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="home" class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="https://www.linkedin.com/in/jos%C3%A9-luis-galvis-escobar-1344821a2/"
+          >
+            <img src="./assets/images/dev.png" alt="logo" style="width: 60px" />
+            <span class="text-white mx-2 mt-2 font-weight-bold"
+              >Dev Portfolio</span
+            >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white active" href="#home">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#nosotros">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#habilidades"
+                  >Habilidades</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#educacion">Educación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center my-1"
+      id="hero"
+    >
+      <div class="row d-flex align-items-center">
+        <!-- Imagen con animación -->
+        <div
+          class="col-md-6 d-flex align-items-center justify-content-center"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img
+            src="./assets/images/foto.png"
+            alt="header"
+            class="img-fluid img-hero"
+          />
+        </div>
+        <!-- Texto con animación -->
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+          <h1 class="display-4 text-white fw-bold">
+            José Luis Galvis Escobar<br />
+            <span class="lead">Desarrollador Full Stack</span>
+          </h1>
+          <br />
+          <div
+            class="d-flex"
+            id="hero-btns"
+            data-aos="zoom-in"
+            data-aos-duration="1200"
+          >
+            <a
+              href="./assets/pdf/CVDEVMAR2025.pdf"
+              class="btn mb-2 mx-2"
+              target="_blank"
+              download="CVJoseLuisGalvis"
+              id="cv"
+            >
+              Descargue CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nosotros -->
+    <section id="nosotros" class="nosotros py-1">
+      <div class="container bg-light">
+        <div class="row min-vh-100 align-items-center">
+          <div
+            class="col-12 col-md-6 mb-1 mb-md-0 d-flex justify-content-center align-items-center"
+            data-aos="fade-right"
+          >
+            <div
+              class="d-flex flex-column align-items-center justify-content-center aboutUs-container"
+            >
+              <img
+                src="./assets/images/aboutUs.jpeg"
+                alt="About Jose Galvis"
+                class="img-fluid aboutUs-img w-100"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-start"
+            data-aos="fade-left"
+          >
+            <h2 class="mb-2">Sobre Mi</h2>
+            <p class="mb-2 text-paragraph text-justify">
+              Full Stack Developer en los Lenguajes de Programación Python,
+              Javascript, Java y Dart, Motivado para aportar mi experiencia,
+              aprender y crecer continuamente, bajo la perspectiva del learning
+              by doing, desarrollando habilidades que permitan ser más eficiente
+              en el cumplimiento de las funciones laborales para incrementar la
+              productividad.
+            </p>
+            <div class="text-center mt-4">
+              <a href="#home" class="btn btn-educacion" id="cv">Ir al Inicio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección Habilidades -->
+    <section class="py-1">
+      <div id="habilidades" class="container">
+        <h2 class="text-center text-white mb-3">Mis Habilidades</h2>
+
+        <!-- Filtro de habilidades -->
+        <div class="row justify-content-center mb-3" data-aos="fade-right">
+          <div class="col-md-6">
+            <div class="btn-group w-100">
+              <button class="btn active cv" data-filter="all">Todas</button>
+              <button class="btn btn-outline" data-filter="frontend">
+                Frontend
+              </button>
+              <button class="btn btn-outline" data-filter="backend">
+                Backend
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de habilidades -->
+        <div class="row skill-container" data-aos="fade-left">
+          <!-- Frontend Skills -->
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item frontend"
+            data-tech="html"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fab fa-html5 fa-3x mb-3" style="color: #dc3545"></i>
+                <h5>HTML5</h5>
+                <progress-bar role="progressbar" aria-valuenow="90">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="10"
+                    ></circle>
+                  </svg>
+                  <span class="label">90</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item frontend"
+            data-tech="css"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i
+                  class="fab fa-css3-alt fa-3x mb-3"
+                  style="color: #0d6efd"
+                ></i>
+                <h5>CSS3</h5>
+                <progress-bar role="progressbar" aria-valuenow="85">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="15"
+                    ></circle>
+                  </svg>
+                  <span class="label">85</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item frontend"
+            data-tech="js"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fab fa-js fa-3x mb-3" style="color: #ffc107"></i>
+                <h5>JavaScript</h5>
+                <progress-bar role="progressbar" aria-valuenow="75">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="25"
+                    ></circle>
+                  </svg>
+                  <span class="label">75</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item frontend"
+            data-tech="react"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fab fa-react fa-3x mb-3" style="color: #17a2b8"></i>
+                <h5>React</h5>
+                <progress-bar role="progressbar" aria-valuenow="70">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="30"
+                    ></circle>
+                  </svg>
+                  <span class="label">70</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item frontend"
+            data-tech="vue"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fab fa-vuejs fa-3x mb-3" style="color: #28a745"></i>
+                <h5>Vue</h5>
+                <progress-bar role="progressbar" aria-valuenow="65">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="35"
+                    ></circle>
+                  </svg>
+                  <span class="label">65</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item frontend"
+            data-tech="angular"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fab fa-angular fa-3x mb-3" style="color: #dc3545"></i>
+                <h5>Angular</h5>
+                <progress-bar role="progressbar" aria-valuenow="60">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="40"
+                    ></circle>
+                  </svg>
+                  <span class="label">60</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item backend"
+            data-tech="node"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fab fa-node-js fa-3x mb-3" style="color: #28a745"></i>
+                <h5>Node.js</h5>
+                <progress-bar role="progressbar" aria-valuenow="75">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="25"
+                    ></circle>
+                  </svg>
+                  <span class="label">75</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item backend"
+            data-tech="express"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fab fa-node fa-3x mb-3" style="color: #28a745"></i>
+                <h5>Express</h5>
+                <progress-bar role="progressbar" aria-valuenow="70">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="30"
+                    ></circle>
+                  </svg>
+                  <span class="label">70</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item backend"
+            data-tech="python"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fab fa-python fa-3x mb-3" style="color: #0d6efd"></i>
+                <h5>Python</h5>
+                <progress-bar role="progressbar" aria-valuenow="80">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="40"
+                    ></circle>
+                  </svg>
+                  <span class="label">80</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item backend"
+            data-tech="java"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fas fa-code fa-3x mb-3" style="color: #17a2b8"></i>
+                <h5>Java</h5>
+                <progress-bar role="progressbar" aria-valuenow="70">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="40"
+                    ></circle>
+                  </svg>
+                  <span class="label">70</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item backend"
+            data-tech="springboot"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fas fa-server fa-3x mb-3" style="color: #17a2b8"></i>
+                <h5>Springboot</h5>
+                <progress-bar role="progressbar" aria-valuenow="70">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="60"
+                    ></circle>
+                  </svg>
+                  <span class="label">70</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 mb-2 skill-item backend"
+            data-tech="FastAPI"
+          >
+            <div class="card bg-white border-0 shadow-sm h-100 skill-card">
+              <div class="card-body text-center">
+                <i class="fas fa-link fa-3x mb-3" style="color: #0d6efd"></i>
+                <h5>Fast API</h5>
+                <progress-bar role="progressbar" aria-valuenow="70">
+                  <svg viewBox="0 0 100 100" class="image">
+                    <circle class="ring track" cx="50" cy="50" r="45"></circle>
+                    <circle
+                      class="ring progress"
+                      cx="50"
+                      cy="50"
+                      r="45"
+                      pathLength="100"
+                      stroke-dasharray="100"
+                      stroke-dashoffset="75"
+                    ></circle>
+                  </svg>
+                  <span class="label">70</span>
+                </progress-bar>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4" data-aos="fade-right">
+          <a href="#home" class="btn" id="cv">Ir al Inicio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Educación -->
+    <section
+      class="container d-flex flex-column align-items-center mt-1"
+      id="educacion"
+    >
+      <h2
+        class="display-4 text-white fw-bold text-center mb-4"
+        data-aos="fade-right"
+      >
+        Educación
+      </h2>
+      <div class="row g-4 about_grid" data-aos="fade-left">
+        <!-- Tarjeta 1 -->
+        <div class="col">
+          <div class="card about_card h-100">
+            <div class="card-body">
+              <h3 class="card-title" data-number="01">
+                Agencia de Habilidades para el Futuro 2022
+              </h3>
+              <p class="card-text">Full Stack Python</p>
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#certificatesModal1"
+                id="cv"
+              >
+                Ver Certificado
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="col">
+          <div class="card about_card h-100">
+            <div class="card-body">
+              <h3 class="card-title" data-number="02">
+                Agencia de Habilidades para el Futuro 2022
+              </h3>
+              <p class="card-text">Django</p>
+              <button
+                type="button"
+                class="btn btn-educacion"
+                data-bs-toggle="modal"
+                data-bs-target="#certificatesModal2"
+                id="cv"
+              >
+                Ver Certificado
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="col">
+          <div class="card about_card h-100">
+            <div class="card-body">
+              <h3 class="card-title" data-number="03">
+                Agencia de Habilidades para el Futuro 2022
+              </h3>
+              <p class="card-text">Full Stack Javascript</p>
+              <button
+                type="button"
+                class="btn btn-educacion"
+                data-bs-toggle="modal"
+                data-bs-target="#certificatesModal3"
+                id="cv"
+              >
+                Ver Certificado
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 about_grid" data-aos="fade-left">
+        <!-- Tarjeta 4 -->
+        <div class="col">
+          <div class="card about_card h-100">
+            <div class="card-body">
+              <h3 class="card-title" data-number="04">
+                Argentina Programa 2023
+              </h3>
+              <p class="card-text">Full Stack Java</p>
+              <button
+                type="button"
+                class="btn btn-educacion"
+                data-bs-toggle="modal"
+                data-bs-target="#certificatesModal4"
+                id="cv"
+              >
+                Ver Certificado
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 5 -->
+        <div class="col">
+          <div class="card about_card h-100">
+            <div class="card-body">
+              <h3 class="card-title" data-number="05">
+                Agencia de Habilidades para el Futuro 2024
+              </h3>
+              <p class="card-text">Full Stack Java</p>
+              <button
+                type="button"
+                class="btn btn-educacion"
+                data-bs-toggle="modal"
+                data-bs-target="#certificatesModal5"
+                id="cv"
+              >
+                Ver Certificado
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 6 -->
+        <div class="col">
+          <div class="card about_card h-100">
+            <div class="card-body">
+              <h3 class="card-title" data-number="06">
+                LinkedIn Learning 2024
+              </h3>
+              <p class="card-text">Spring Boot Esencial</p>
+              <button
+                type="button"
+                class="btn btn-educacion"
+                data-bs-toggle="modal"
+                data-bs-target="#certificatesModal6"
+                id="cv"
+              >
+                Ver Certificado
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 about_grid" data-aos="fade-left">
+        <!-- Tarjeta 7 -->
+        <div class="col">
+          <div class="card about_card h-100">
+            <div class="card-body">
+              <h3 class="card-title" data-number="07">
+                Mercado Pago Developers 2024
+              </h3>
+              <p class="card-text">Check Out Pro</p>
+              <button
+                type="button"
+                class="btn btn-educacion"
+                data-bs-toggle="modal"
+                data-bs-target="#certificatesModal7"
+                id="cv"
+              >
+                Ver Certificado
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 8 -->
+        <div class="col">
+          <div class="card about_card h-100">
+            <div class="card-body">
+              <h3 class="card-title" data-number="08">
+                Agencia de Habilidades para el Futuro 2024
+              </h3>
+              <p class="card-text">React</p>
+              <button
+                type="button"
+                class="btn btn-educacion"
+                data-bs-toggle="modal"
+                data-bs-target="#certificatesModal8"
+                id="cv"
+              >
+                Ver Certificado
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 9 -->
+        <div class="col">
+          <div class="card about_card h-100">
+            <div class="card-body">
+              <h3 class="card-title" data-number="09">EDTeam 2022</h3>
+              <p class="card-text">Ruby desde Cero</p>
+              <button
+                type="button"
+                class="btn btn-educacion"
+                data-bs-toggle="modal"
+                data-bs-target="#certificatesModal9"
+                id="cv"
+              >
+                Ver Certificado
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#home" class="btn" id="cv">Ir al Inicio</a>
+      </div>
+    </section>
+    <!-- Modales - Educación -->
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="certificatesModal1"
+      tabindex="-1"
+      aria-labelledby="certificatesModalLabel1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certificatesModalLabel1">
+              Certificado EIDOS Global SilverTech 2024
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/images/c1.jpeg"
+              class="img-fluid"
+              alt="Certificado EIDOS Global SilverTech 2024"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cv"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="certificatesModal2"
+      tabindex="-1"
+      aria-labelledby="certificatesModalLabel2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certificatesModalLabel2">
+              Certificado NEORIS - UTN 2021
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/images/c2.jpeg"
+              class="img-fluid"
+              alt="Certificado NEORIS - UTN 2021"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cv"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div
+      class="modal fade"
+      id="certificatesModal3"
+      tabindex="-1"
+      aria-labelledby="certificatesModalLabel3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certificatesModalLabel3">
+              Certificado PRACTIA GLOBAL 2021
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/images/c3.jpeg"
+              class="img-fluid"
+              alt="Certificado PRACTIA GLOBAL 2021"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cv"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 4 -->
+    <div
+      class="modal fade"
+      id="certificatesModal4"
+      tabindex="-1"
+      aria-labelledby="certificatesModalLabel4"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certificatesModalLabel1">
+              Certificado EIDOS Global SilverTech 2024
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/images/c4.jpeg"
+              class="img-fluid"
+              alt="Certificado EIDOS Global SilverTech 2024"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cv"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 5 -->
+    <div
+      class="modal fade"
+      id="certificatesModal5"
+      tabindex="-1"
+      aria-labelledby="certificatesModalLabel5"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certificatesModalLabel2">
+              Certificado NEORIS - UTN 2021
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/images/c5.jpeg"
+              class="img-fluid"
+              alt="Certificado NEORIS - UTN 2021"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cv"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 6 -->
+    <div
+      class="modal fade"
+      id="certificatesModal6"
+      tabindex="-1"
+      aria-labelledby="certificatesModalLabel6"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certificatesModalLabel3">
+              Certificado PRACTIA GLOBAL 2021
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/images/c6.jpeg"
+              class="img-fluid"
+              alt="Certificado PRACTIA GLOBAL 2021"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cv"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 7 -->
+    <div
+      class="modal fade"
+      id="certificatesModal7"
+      tabindex="-1"
+      aria-labelledby="certificatesModalLabel7"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certificatesModalLabel1">
+              Certificado EIDOS Global SilverTech 2024
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/images/c7.jpeg"
+              class="img-fluid"
+              alt="Certificado EIDOS Global SilverTech 2024"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cv"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 8 -->
+    <div
+      class="modal fade"
+      id="certificatesModal8"
+      tabindex="-1"
+      aria-labelledby="certificatesModalLabel8"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certificatesModalLabel2">
+              Certificado NEORIS - UTN 2021
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/images/c8.jpeg"
+              class="img-fluid"
+              alt="Certificado NEORIS - UTN 2021"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cv"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 9 -->
+    <div
+      class="modal fade"
+      id="certificatesModal9"
+      tabindex="-1"
+      aria-labelledby="certificatesModalLabel9"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="certificatesModalLabel3">
+              Certificado PRACTIA GLOBAL 2021
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="./assets/images/c9.jpeg"
+              class="img-fluid"
+              alt="Certificado PRACTIA GLOBAL 2021"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cv"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="py-1">
+      <div class="container min-vh-100 bg-light">
+        <h2 class="text-center mb-3">Mis Proyectos</h2>
+
+        <!-- Filtro de categorías de proyectos -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-6">
+            <div class="btn-group w-100">
+              <button class="btn active" data-filter="all">Todos</button>
+              <button class="btn btn-outline" data-filter="web">Web</button>
+              <button class="btn btn-outline" data-filter="app">Apps</button>
+              <button class="btn btn-outline" data-filter="otro">Otros</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyectos en tarjetas -->
+        <div class="row project-container">
+          <!-- Proyecto 1 -->
+          <div class="col-lg-6 mb-4 project-item web">
+            <div class="card border-0 shadow-sm h-100 project-card">
+              <img
+                src="https://placehold.co/600x350"
+                class="card-img-top"
+                alt="Proyecto 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">E-commerce de Productos Orgánicos</h5>
+                <p class="card-text">
+                  Tienda online completa de productos orgánicos con carrito de
+                  compras, pagos y gestión de usuarios.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-primary me-1">HTML</span>
+                  <span class="badge bg-info me-1">CSS</span>
+                  <span class="badge bg-warning me-1">JavaScript</span>
+                  <span class="badge bg-success">Node.js</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-sm btn-outline" id="cv"
+                    >Ver Demo</a
+                  >
+                  <a href="#" class="btn btn-sm btn-outline" id="cv"
+                    >Ver Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-lg-6 mb-4 project-item app">
+            <div class="card border-0 shadow-sm h-100 project-card">
+              <img
+                src="https://placehold.co/600x350"
+                class="card-img-top"
+                alt="Proyecto 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">App de Gestión de Tareas</h5>
+                <p class="card-text">
+                  Aplicación para gestionar tareas con categorías, fechas de
+                  vencimiento y notificaciones.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-info me-1">React</span>
+                  <span class="badge bg-success me-1">Express</span>
+                  <span class="badge bg-secondary">MongoDB</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-sm btn-outline" id="cv"
+                    >Ver Demo</a
+                  >
+                  <a href="#" class="btn btn-sm btn-outline-dark" id="cv"
+                    >Ver Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="col-lg-6 mb-4 project-item web">
+            <div class="card border-0 shadow-sm h-100 project-card">
+              <img
+                src="https://placehold.co/600x350"
+                class="card-img-top"
+                alt="Proyecto 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dashboard Administrativo</h5>
+                <p class="card-text">
+                  Panel de control para gestionar usuarios, productos y ventas
+                  de una tienda online.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-primary me-1">HTML</span>
+                  <span class="badge bg-warning me-1">JavaScript</span>
+                  <span class="badge bg-success me-1">Bootstrap</span>
+                  <span class="badge bg-danger">Chart.js</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-sm btn-outline" id="cv"
+                    >Ver Demo</a
+                  >
+                  <a href="#" class="btn btn-sm btn-outline-dark" id="cv"
+                    >Ver Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 4 -->
+          <div class="col-lg-6 mb-4 project-item otro">
+            <div class="card border-0 shadow-sm h-100 project-card">
+              <img
+                src="https://placehold.co/600x350"
+                class="card-img-top"
+                alt="Proyecto 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">API de Clima</h5>
+                <p class="card-text">
+                  API que consume datos de servicios meteorológicos y
+                  proporciona información del clima por ciudad.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-success me-1">Node.js</span>
+                  <span class="badge bg-info me-1">Express</span>
+                  <span class="badge bg-primary">RESTful API</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-sm btn-outline" id="cv"
+                    >Ver Demo</a
+                  >
+                  <a href="#" class="btn btn-sm btn-outline-dark" id="cv"
+                    >Ver Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-lg-6 mb-4 project-item otro">
+            <div class="card border-0 shadow-sm h-100 project-card">
+              <img
+                src="https://placehold.co/600x350"
+                class="card-img-top"
+                alt="Proyecto 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">API de Clima</h5>
+                <p class="card-text">
+                  API que consume datos de servicios meteorológicos y
+                  proporciona información del clima por ciudad.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-success me-1">Node.js</span>
+                  <span class="badge bg-info me-1">Express</span>
+                  <span class="badge bg-primary">RESTful API</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-sm btn-outline" id="cv"
+                    >Ver Demo</a
+                  >
+                  <a href="#" class="btn btn-sm btn-outline-dark" id="cv"
+                    >Ver Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-lg-6 mb-4 project-item otro">
+            <div class="card border-0 shadow-sm h-100 project-card">
+              <img
+                src="https://placehold.co/600x350"
+                class="card-img-top"
+                alt="Proyecto 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">API de Clima</h5>
+                <p class="card-text">
+                  API que consume datos de servicios meteorológicos y
+                  proporciona información del clima por ciudad.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-success me-1">Node.js</span>
+                  <span class="badge bg-info me-1">Express</span>
+                  <span class="badge bg-primary">RESTful API</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-sm btn-outline" id="cv"
+                    >Ver Demo</a
+                  >
+                  <a href="#" class="btn btn-sm btn-outline-dark" id="cv"
+                    >Ver Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4 project-item otro d-none">
+          <!-- Proyecto 4 -->
+          <div class="col-lg-6 mb-4 project-item otro">
+            <div class="card border-0 shadow-sm h-100 project-card">
+              <img
+                src="https://placehold.co/600x350"
+                class="card-img-top"
+                alt="Proyecto 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">API de Clima</h5>
+                <p class="card-text">
+                  API que consume datos de servicios meteorológicos y
+                  proporciona información del clima por ciudad.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-success me-1">Node.js</span>
+                  <span class="badge bg-info me-1">Express</span>
+                  <span class="badge bg-primary">RESTful API</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-sm btn-outline-primary"
+                    >Ver Demo</a
+                  >
+                  <a href="#" class="btn btn-sm btn-outline-dark">Ver Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón para ver más proyectos -->
+        <div class="text-center mt-2">
+          <a href="#" class="btn" id="btnVerMas" id="cv">Ver Más Proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto-->
+    <section id="contacto" class="container py-1">
+      <div class="row justify-content-center">
+        <!-- Formulario de contacto -->
+        <div class="col-lg-8 col-md-10 col-12">
+          <form id="contactForm">
+            <div class="text-center mb-4">
+              <h1 class="display-4 text-white fw-bold">Contáctame</h1>
+              <h4 class="text-white">¡Me Encantaría Conocer tu Propuesta!</h4>
+            </div>
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="inputName" class="text-white"
+                    >Nombre y Apellido</label
+                  >
+                  <input
+                    type="text"
+                    id="inputName"
+                    name="nombre"
+                    class="form-control"
+                    placeholder="Ingrese su nombre"
+                    required
+                    pattern="[A-Za-záéíóúñÑ ]+"
+                    oninput="validarNombreApellido(event)"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="inputEmail" class="text-white">Email</label>
+                  <input
+                    type="email"
+                    id="inputEmail"
+                    name="email"
+                    class="form-control"
+                    required
+                    placeholder="Ingrese su email"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="inputPhone" class="text-white">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="inputPhone"
+                    name="telefono"
+                    class="form-control"
+                    required
+                    pattern="[0-9]{1,10}"
+                    placeholder="Ingrese su teléfono"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="inputMessage" class="text-white">Mensaje</label>
+                  <textarea
+                    id="inputMessage"
+                    name="mensaje"
+                    class="form-control"
+                    required
+                    placeholder="Ingrese su mensaje"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div
+                class="col-12 d-flex justify-content-between align-items-center mt-3"
+              >
+                <button
+                  type="submit"
+                  class="btn btn-proyectos text-white"
+                  id="cv"
+                >
+                  Enviar Mensaje
+                </button>
+                <a
+                  href="https://wa.me/1133649070"
+                  target="_blank"
+                  class="btn ms-auto"
+                >
+                  <img
+                    src="./assets/icons/ws.png"
+                    alt="WhatsApp"
+                    width="50"
+                    height="50"
+                  />
+                </a>
+              </div>
+            </div>
+          </form>
+          <!-- Fin Formulario de contacto -->
+          <a
+            href="#home"
+            class="btn btn-proyectos text-white text-center"
+            id="cv"
+            >Ir al Inicio</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-1 pb-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="footer_logo mt-2">
+              <a href="#" class="d-flex align-items-center">
+                <img
+                  src="./assets/images/dev.png"
+                  alt="logo"
+                  class="me-2 footer_logo_img"
+                  style="width: 120px"
+                />
+              </a>
+              <p class="text-white">Agregando Valor a tu Empresa.</p>
+            </div>
+
+            <ul class="list-unstyled d-flex">
+              <li class="me-2">
+                <a
+                  href="https://www.instagram.com/jose_galvis65/"
+                  class="text-icon"
+                  ><i class="ri-instagram-fill fa-2x"></i
+                ></a>
+              </li>
+              <li class="me-2">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100046965497737"
+                  class="text-icon"
+                  ><i class="ri-facebook-fill"></i
+                ></a>
+              </li>
+              <li class="me-2">
+                <a href="https://x.com/JosegalvisDip" class="text-icon"
+                  ><i class="ri-twitter-fill"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jos%C3%A9-luis-galvis-escobar-1344821a2/"
+                  class="text-icon"
+                  ><i class="ri-linkedin-fill"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h4 class="text-white">Mapa</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13138.566325268608!2d-58.38310044999999!3d-34.5879346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1691335417320!5m2!1ses!2sar"
+              class="w-100"
+              height="220"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-white">Contacto</h4>
+            <div>
+              <i class="fa fa-home fs-5"></i>
+              <p class="d-inline-block text-white ms-2">Ubicación:</p>
+              <p class="d-inline-block text-white ms-1">PBA - Argentina</p>
+              <br />
+              <i class="fa fa-envelope fs-5"></i>
+              <p class="d-inline-block text-white ms-2">Correo Electrónico:</p>
+              <p class="d-inline-block text-white ms-1">jolugales@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-white text-center py-2">
+        Copyright © 2025 José Luis Galvis Escobar. Todos los Derechos
+        Reservados.
+      </div>
+    </footer>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jQuery (requerido para algunas funcionalidades) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- AOS (Animate On Scroll) para animaciones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Incluir el script de EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        // Reemplaza "tu_user_id" con tu User ID de EmailJS
+        emailjs.init("lFSgkG7UZGdyDm_ad");
+      })();
+    </script>
+
+    <!-- Configurar el envío del formulario -->
+    <script type="text/javascript">
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const form = this; // Guardar referencia al formulario
+
+          emailjs.sendForm("service_mn9l8gc", "template_5kp1ksm", this).then(
+            function () {
+              console.log("Mensaje Enviado con Éxito!");
+              alert("Mensaje Enviado con Éxito");
+
+              // Limpiar el formulario después de enviarlo con éxito
+              form.reset();
+            },
+            function (error) {
+              console.log("Error al Enviar el Mensaje", error);
+              alert("Error al Enviar el Mensaje");
+            }
+          );
+        });
+    </script>
+    <script>
+      document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.ctrlKey && (event.key === "u" || event.key === "U")) {
+          event.preventDefault();
+        }
+      });
+    </script>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
