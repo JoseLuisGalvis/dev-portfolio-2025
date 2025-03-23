@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  //
   // Obtener todos los elementos de proyectos
   const projectItems = document.querySelectorAll(".project-item");
 
@@ -67,66 +66,51 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Ver Nuevos Proyectos
-  document.addEventListener("DOMContentLoaded", function () {
-    const btnVerMas = document.getElementById("btnVerMas");
-    const proyectosOcultos = document.querySelectorAll(".project-item.d-none");
+  // Definir el elemento personalizado
+  class ProgressBar extends HTMLElement {
+    #label;
+    #progress;
 
-    btnVerMas.addEventListener("click", function (e) {
-      e.preventDefault();
-      proyectosOcultos.forEach((proyecto) =>
-        proyecto.classList.remove("d-none")
-      );
-      btnVerMas.style.display = "none"; // Ocultar el botón después de mostrar los proyectos
-    });
-  });
-});
+    constructor() {
+      super();
+      this.#label = this.querySelector(".label");
+      this.#progress = this.querySelector(".progress");
+    }
 
-//
-// Definir el elemento personalizado
-class ProgressBar extends HTMLElement {
-  #label;
-  #progress;
-
-  constructor() {
-    super();
-    this.#label = this.querySelector(".label");
-    this.#progress = this.querySelector(".progress");
-  }
-
-  attributeChangedCallback(attribute, previous, current) {
-    if (attribute === "aria-valuenow") {
-      if (current >= 0 && current <= 100) {
-        this.#progress.setAttribute("stroke-dashoffset", 100 - current);
-        this.#label.innerText = current;
+    attributeChangedCallback(attribute, previous, current) {
+      if (attribute === "aria-valuenow") {
+        if (current >= 0 && current <= 100) {
+          this.#progress.setAttribute("stroke-dashoffset", 100 - current);
+          this.#label.innerText = current;
+        }
       }
+    }
+
+    static get observedAttributes() {
+      return ["aria-valuenow"];
     }
   }
 
-  static get observedAttributes() {
-    return ["aria-valuenow"];
-  }
-}
+  window.customElements.define("progress-bar", ProgressBar);
 
-window.customElements.define("progress-bar", ProgressBar);
+  // Filtro de habilidades
+  document.querySelectorAll(".btn-group .btn").forEach((button) => {
+    button.addEventListener("click", function () {
+      document
+        .querySelectorAll(".btn-group .btn")
+        .forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
 
-// Filtro de habilidades
-document.querySelectorAll(".btn-group .btn").forEach((button) => {
-  button.addEventListener("click", function () {
-    document
-      .querySelectorAll(".btn-group .btn")
-      .forEach((btn) => btn.classList.remove("active"));
-    this.classList.add("active");
+      const filter = this.getAttribute("data-filter");
+      const skills = document.querySelectorAll(".skill-item");
 
-    const filter = this.getAttribute("data-filter");
-    const skills = document.querySelectorAll(".skill-item");
-
-    skills.forEach((skill) => {
-      if (filter === "all" || skill.classList.contains(filter)) {
-        skill.style.display = "block";
-      } else {
-        skill.style.display = "none";
-      }
+      skills.forEach((skill) => {
+        if (filter === "all" || skill.classList.contains(filter)) {
+          skill.style.display = "block";
+        } else {
+          skill.style.display = "none";
+        }
+      });
     });
   });
 });
