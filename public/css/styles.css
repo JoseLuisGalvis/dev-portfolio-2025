@@ -72,12 +72,14 @@ h1 {
   transition: color 0.3s ease-in-out; /* Suaviza la animación */
 }
 
-.cv {
+.cv,
+#btnVerMas {
   color: var(--background-light) !important;
   background-color: var(--cta-color) !important;
 }
 
-.cv:hover {
+.cv:hover,
+#btnVerMas:hover {
   font-weight: 600;
   background-color: var(--accent-color) !important;
 }
@@ -482,6 +484,10 @@ progress-bar {
 /* Estilo para los botones no activos */
 .btn-group .btn-outline:not(.active) {
   color: var(--cta-color) !important;
+}
+
+.btn-ws {
+  border: none !important;
 }
 
 /**************   Responsive   ****************************/
