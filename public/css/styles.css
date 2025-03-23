@@ -111,6 +111,10 @@ h1:hover {
   text-decoration: none;
 }
 
+.text-icon:hover {
+  color: var(--cta-color);
+}
+
 /* Estilo para el Navbar */
 .navbar-nav {
   position: relative;
