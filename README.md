@@ -246,4 +246,4 @@ La responsabilidad sobre las decisiones de diseño, implementación, integració
 
 Proyecto desarrollado como parte de la **Práctica Final Obligatoria 1 (PFO1)**.
 
-**Año:** 2025
+**Año:** 2026
